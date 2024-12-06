@@ -2,6 +2,15 @@ const navbarMenu = document.querySelector(".header__nav .header__menu");
 const menuBtn = document.querySelector(".menu-btn");
 const hideMenuBtn = navbarMenu.querySelector(".close-btn");
 const menuLinks = document.querySelectorAll(".header__link");
+const showPopupBtn = document.querySelector(".book-now-btn");
+const formPopup = document.querySelector(".form-popup");
+const hidePopupBtn = document.querySelector(".form-popup .close-btn");
+
+showPopupBtn.addEventListener("click", () => {
+  document.body.classList.toggle("show-popup");
+});
+
+hidePopupBtn.addEventListener("click", () => showPopupBtn.click());
 
 menuBtn.addEventListener("click", () => {
   navbarMenu.classList.toggle("show-menu");
