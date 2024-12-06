@@ -58,7 +58,6 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
-  padding: 20px;
 }
 
 .container {
@@ -84,7 +83,7 @@ body {
 .text {
   font-family: 'Lora', serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #444;
   line-height: 1.7;
 }
@@ -170,6 +169,79 @@ header {
   display: none;
 }
 
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__title {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: #f0f0f0;
+  padding: 20px 40px;
+  border-radius: 0 0 40px 0;
+  max-width: 600px;
+  box-sizing: border-box;
+  letter-spacing: 3px;
+}
+
+.hero__content {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 254, 254, 0.63);
+  color: #333;
+  padding: 10px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+  width: 1020px;
+}
+
+.hero__content p {
+  width: 100%;
+}
+
+.block__text {
+  margin: 60px 0;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 6px 6px 12px #f0f0f0,
+    -6px -6px 12px #f0f0f0;
+}
+
+.title__name {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 10px 0;
+  letter-spacing: 5px;
+  animation: running-text 10s ease-in infinite;
+}
+
+@keyframes running-text {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text {
+    animation: none;
+  }
+}
+
 @media (max-width: 1024px) {
   .title {
     font-size: 2.5rem;
@@ -180,11 +252,21 @@ header {
   }
 
   .text {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .body {
     font-size: 1.1rem;
+  }
+
+  .hero__title {
+    top: 55px;
+    left: 0;
+    padding: 20px 30px;
+  }
+
+  .hero__content {
+    width: 90%;
   }
 }
 
@@ -195,10 +277,6 @@ header {
 
   .subtitle {
     font-size: 1.5rem;
-  }
-
-  .text {
-    font-size: 0.85rem;
   }
 
   .body {
@@ -234,6 +312,16 @@ header {
     padding-top: 30px;
   }
 
+  .hero {
+    background-image: url('images/hero-bd\(768px\).jpg');
+  }
+
+  .hero__title {
+    top: 50px;
+    left: 0;
+    padding: 10px 20px;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -246,7 +334,7 @@ header {
   }
 
   .text {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .body {
