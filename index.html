@@ -14,10 +14,10 @@
   <header>
     <div class="container">
       <div class="header">
-        <div class="logo">
+        <a class="logo" href="#home">
           <i class="fa-brands fa-nfc-symbol"></i>
           <h2 class="logo__text subtitle">ProServe</h2>
-        </div>
+        </a>
         <nav class="header__nav">
           <span class="menu-btn"><i class="fa-solid fa-bars"></i></span>
           <ul class="header__menu">
@@ -30,7 +30,7 @@
       </div>
     </div>
   </header>
-  <section class="hero">
+  <section class="hero" id="home">
     <h1 class="title hero__title">TENNIS CLUB</h1>
     <div class="hero__content">
       <p class="text">Our state-of-the-art tennis courts, expert coaching, and exclusive services are the hallmarks of
@@ -70,9 +70,82 @@
       </form>
     </div>
   </div>
+  <section class="services" id="services">
+    <h1 class="title  services__title">SERVICES</h1>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/privat-lessons.jpg" alt="PRIVATE LESSONS">
+          <h3 class="subtitle">PRIVATE LESSONS</h3>
+          <p class="text">Lessons with certified coaches for all skill levels.</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/services.jpg" alt="MEMBERSHIP">
+          <h3 class="subtitle">MEMBERSHIP</h3>
+          <p class="text">Individual or family membership with exclusive benefits.</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/junior-program.jpg" alt="JUNIOR PROGRAMS">
+          <h3 class="subtitle">JUNIOR PROGRAMS</h3>
+          <p class="text">Tennis programs for children of all ages, focusing on skill development and fun.</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/tournaments.jpg" alt="TOURNAMENTS AND EVENTS">
+          <h3 class="subtitle">TOURNAMENTS AND EVENTS</h3>
+          <p class="text">Regular tournaments and events for players of all levels.</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/court-rental.jpg" alt="COURT RENTAL">
+          <h3 class="subtitle">COURT RENTAL</h3>
+          <p class="text">Rent a court for personal or group sessions.</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/junior-program.jpg" alt="JUNIOR PROGRAMS">
+          <h3 class="subtitle">JUNIOR PROGRAMS</h3>
+          <p class="text">Tennis programs for children of all ages, focusing on skill development and fun.</p>
+        </div>
+      </div>
+      <div class="swiper-controls">
+        <div class="swiper-button-prev"><i class="fa-solid fa-angles-left"></i></div>
+        <div class="swiper-button-next"><i class="fa-solid fa-angles-right"></i></div>
+      </div>
+    </div>
+  </section>
+  <section class="join" id="join">
+    <img src="images/join-img.jpg" alt="join images">
+    <div class="join__content">
+      <h1 class="title join__title">PRO SERVE TENNIS CLUB</h1>
+      <h3 class="subtitle">Stay informed about upcoming events, tournaments, and exclusive offers.</h3>
+      <div class="subscribe">
+        <h3 class="subtitle">SUBSCRIBE</h3>
+        <input placeholder="Your e-mail" class="subscribe-input" name="email" type="email">
+        <button class="book-now-btn">SUBMIT</button>
+        <p class="book-text">Get a free ebook when you subscribe!</p>
+      </div>
+    </div>
 
+    </div>
+  </section>
+  <footer class="footer" id="location">
+    <div class="location-container">
+      <a class="logo" href="#home">
+        <i class="fa-brands fa-nfc-symbol"></i>
+        <h2 class="logo__text subtitle">ProServe</h2>
+      </a>
+      <div class="footer__info">
+        <h3 class="subtitle">ProServe Tennis Club</h3>
+        <adress class="adress">Václavské náměstí 58, 110 00 Prague 1, Czech Republic
+        </adress>
+        <a class="phone" href="tel:+7206765252222"> (72067) 65 252 222</a>
+        <a class="email" href="mailto:info@mail.com">info@mail.com</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>2024 @ Pro Serve Tennis Club...</p>
+    </div>
+  </footer>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="main.js"></script>
 </body>
 
